@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Background Request Demo</title>
+</head>
+<body>
+
+<h1>Hello! Welcome to this page.</h1>
+
+ <script>
+fetch("https://www.adda247.com/")
+.then(response => response.text())
+.then(data => {
+    console.log(data);
+})
+.catch(error => {
+    console.log(error);
+});
+</script>
+
+</body>
+</html>
